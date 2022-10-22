@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: demo-api
-        image: ejc2021ht/internal:v1.0
+        image: ejc2021ht/internal:v3.0
         env: 
         - name: SERVICE_PORT
           value: "8082" 

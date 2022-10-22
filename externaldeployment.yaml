@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: demo-ui
-        image: ejc2021ht/external:v2.0
+        image: ejc2021ht/external:v3.0
         env: 
         - name: SERVER
           value: "http://demo-service:8082"
@@ -22,6 +22,12 @@ spec:
           value: "8080"
         - name: BUCKET
           value: "roigcp-hca-u118-private"
+        - name: LIVE_BUCKET
+          value: "roigcp-hca-u118-public"
+        - name: GOOGLE_CLOUD_PROJECT
+          value: "roigcp-hca-u118"
+        - name: SUBSCRIPTION
+          value: "image_updated-sub1"               
         ports:
         - containerPort: 8080
             
